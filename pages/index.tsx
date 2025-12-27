@@ -122,7 +122,7 @@ export default function Home() {
               "@type": "WebApplication",
               "name": "GitHub Stats Generator",
               "description": "Generate beautiful, customizable GitHub statistics cards for your profile README",
-              "url": typeof window !== "undefined" ? window.location.origin : "",
+              "url": "https://github-stats-generator.vercel.app",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Web",
               "offers": {
@@ -319,17 +319,16 @@ export default function Home() {
           {error && <div className="error">{error}</div>}
 
           {previewUrl && (
-            <>
-              <div className="form-group">
-                <label>Markdown Code</label>
-                <div className="markdown-output">{generateMarkdown()}</div>
-                <button className={`button copy-button ${copied ? "copied" : ""}`} onClick={copyMarkdown}>
-                  {copied ? "✓ Copied!" : "Copy Markdown"}
-                </button>
-              </div>
-            </>
+            <div className="form-group">
+              <label>Markdown Code</label>
+              <div className="markdown-output">{generateMarkdown()}</div>
+              <button className={`button copy-button ${copied ? "copied" : ""}`} onClick={copyMarkdown}>
+                {copied ? "✓ Copied!" : "Copy Markdown"}
+              </button>
+            </div>
           )}
         </div>
+      </div>
       </div>
     </>
   );
