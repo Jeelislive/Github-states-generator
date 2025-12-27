@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://github-stats-generator.vercel.app/sitemap.xml
+Sitemap: https://github-states-generator.vercel.app/sitemap.xml
 

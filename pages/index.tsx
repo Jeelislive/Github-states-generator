@@ -122,7 +122,7 @@ export default function Home() {
               "@type": "WebApplication",
               "name": "GitHub Stats Generator",
               "description": "Generate beautiful, customizable GitHub statistics cards for your profile README",
-              "url": "https://github-stats-generator.vercel.app",
+              "url": "https://github-states-generator.vercel.app",
               "applicationCategory": "DeveloperApplication",
               "operatingSystem": "Web",
               "offers": {

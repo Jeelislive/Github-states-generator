@@ -23,7 +23,7 @@ export default function Document() {
         <link rel="icon" href="/favicon.ico" />
         
         {/* Canonical URL */}
-        <link rel="canonical" href="https://github-stats-generator.vercel.app" />
+        <link rel="canonical" href="https://github-states-generator.vercel.app" />
       </Head>
       <body>
         <Main />
