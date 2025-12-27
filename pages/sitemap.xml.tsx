@@ -2,11 +2,8 @@ import { GetServerSideProps } from "next";
 
 function generateSiteMap() {
   // Always use production URL for sitemap (Google doesn't allow preview URLs)
-  // Only use VERCEL_URL if it's a production deployment
-  const isProduction = process.env.VERCEL_ENV === 'production';
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 
-    (isProduction && process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null) ||
-    "https://github-states-generator.vercel.app";
+  // Hardcode production URL to avoid preview deployment URLs
+  const baseUrl = "https://github-states-generator.vercel.app";
   
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
