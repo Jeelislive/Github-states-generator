@@ -1,6 +1,6 @@
 # GitHub Stats Generator
 
-A beautiful web application for generating customizable GitHub statistics cards for your profile README.
+A beautiful, free web application for generating customizable GitHub statistics cards for your profile README. Create stunning GitHub profile badges with 40+ themes, multiple card types, and live preview. Perfect for developers who want to showcase their GitHub activity in their README files.
 
 ## Features
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Head from "next/head";
 import { themes, Theme } from "@/lib/themes";
 
 type CardType = "stats" | "top-langs" | "streak" | "additional-stats";
@@ -106,9 +107,46 @@ export default function Home() {
   };
 
   return (
-    <div className="container">
-      <h1>GitHub Stats Generator</h1>
-      <p className="subtitle">Create beautiful, customizable GitHub statistics cards for your profile README</p>
+    <>
+      <Head>
+        <title>GitHub Stats Generator - Create Beautiful Profile Cards | Free Tool</title>
+        <meta name="description" content="Generate beautiful, customizable GitHub statistics cards for your profile README. Free tool with 40+ themes, stats cards, streak cards, and top languages cards." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              "name": "GitHub Stats Generator",
+              "description": "Generate beautiful, customizable GitHub statistics cards for your profile README",
+              "url": typeof window !== "undefined" ? window.location.origin : "",
+              "applicationCategory": "DeveloperApplication",
+              "operatingSystem": "Web",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              "featureList": [
+                "40+ Built-in Themes",
+                "Stats Cards",
+                "Streak Cards",
+                "Top Languages Cards",
+                "Customizable Colors",
+                "Live Preview",
+                "Free to Use"
+              ]
+            })
+          }}
+        />
+      </Head>
+      
+      <div className="container">
+        <h1>GitHub Stats Generator</h1>
+        <p className="subtitle">Create beautiful, customizable GitHub statistics cards for your profile README</p>
 
       <div className="grid">
         <div className="card">
@@ -293,7 +331,7 @@ export default function Home() {
           )}
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
