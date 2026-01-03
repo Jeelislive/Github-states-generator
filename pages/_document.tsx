@@ -10,13 +10,13 @@ export default function Document() {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="GitHub Stats Generator - Create Beautiful Profile Cards" />
+        <meta property="og:title" content="GitHub Stats Generator" />
         <meta property="og:description" content="Generate beautiful, customizable GitHub statistics cards for your profile README. 40+ themes, multiple card types, and live preview." />
         <meta property="og:image" content="/og-image.png" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="GitHub Stats Generator - Create Beautiful Profile Cards" />
+        <meta name="twitter:title" content="GitHub Stats Generator" />
         <meta name="twitter:description" content="Generate beautiful, customizable GitHub statistics cards for your profile README." />
         
         {/* Favicon */}

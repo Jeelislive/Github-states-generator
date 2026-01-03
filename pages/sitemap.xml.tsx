@@ -25,7 +25,8 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   // Generate the XML sitemap
   const sitemap = generateSiteMap();
 
-  res.setHeader("Content-Type", "text/xml");
+  res.setHeader("Content-Type", "text/xml; charset=utf-8");
+  res.setHeader("Cache-Control", "public, s-maxage=3600, stale-while-revalidate");
   res.write(sitemap);
   res.end();
 

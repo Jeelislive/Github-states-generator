@@ -109,7 +109,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>GitHub Stats Generator - Create Beautiful Profile Cards | Free Tool</title>
+        <title>GitHub Stats Generator</title>
         <meta name="description" content="Generate beautiful, customizable GitHub statistics cards for your profile README. Free tool with 40+ themes, stats cards, streak cards, and top languages cards." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
